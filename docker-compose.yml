@@ -1,0 +1,8 @@
+version: '3'
+services:
+    nginx:
+          image: sureshdevopsengineer/custom-nginx:latest
+                ports:
+                        - "80:80"
+                              volumes:
+                                      - ./html:/var/opt/nginx
